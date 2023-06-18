@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <header>
             <h1>Belanja.com</h1>
-            <button>Login</button>
+            <button className='button-logout'>Logout</button>
         </header>
     )
 }

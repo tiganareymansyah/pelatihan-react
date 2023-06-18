@@ -10,21 +10,24 @@ import Product from "./components/pertemuan-5/product";
 const products = [
   {
     id: 1,
-    name: "Mukena Rabbani",
-    desc: "Mukena Pilihan",
-    price: "Rp.150.000",
+    name: "Air Jordan Wmns Aj 1 Mid",
+    urlImages: "https://www.ncrsport.com/img/storage/large/DN3738-400-1.jpg?2023-03-06%2011:33:39",
+    price: "Rp.2.800.000,-",
+    desc: "Sepatu Air Jordan Wmns Aj 1 Mid dengan harga Rp.2.800.000,- adalah kualitas terbaik ke 1.",
   },
   {
     id: 2,
-    name: "Sarung Mangga",
-    desc: "Sarung Pilihan",
-    price: "Rp.50.000",
+    name: "Yeezy 350 V2 Black Cooper",
+    urlImages: "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2020/12/1/234025d9-85bc-48fb-9bfb-8aa815feacf8.jpg",
+    price: "Rp.500.000,-",
+    desc: "Sepatu Yeezy 350 V2 Black Cooper dengan harga Rp.500.000,- adalah kualitas terbaik ke 2.",
   },
   {
     id: 3,
-    name: "Peci Wadimor",
-    desc: "Peci Pilihan",
-    price: "Rp.40.000",
+    name: "Macbeth you're fucking idiots",
+    urlImages: "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/2/13/a4d96e55-6c0f-428f-ae3a-4794ddf3ac37.jpg",
+    price: "Rp.200.000,-",
+    desc: `Sepatu Macbeth you're fucking idiots dengan harga Rp.200.000,- adalah kualitas terbaik ke 3.`,
   },
 ];
 
@@ -47,7 +50,7 @@ function App() {
       <Header />
       <main>
         {products.map((p) => (
-          <Product key={p.id} name={p.name} desc={p.desc} price={p.price} />
+          <Product key={p.id} name={p.name} urlImages={p.urlImages} price={p.price} desc={p.desc} />
         ))}
       </main>
     </>
