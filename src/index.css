@@ -1,0 +1,13 @@
+body {
+    font-family: "Google Sans", sans-serif;
+
+    & .div-product {
+        display: flex;
+        gap: 16px;
+        > .div-product1 {
+            > img {
+                max-width: 100px;
+            }
+        }
+    }
+}
