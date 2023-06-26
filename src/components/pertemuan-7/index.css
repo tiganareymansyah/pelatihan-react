@@ -20,6 +20,8 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    text-decoration: none;
+    color: #fff;
 }
 
 .logo-apple {
@@ -42,6 +44,15 @@
 
 .logo-logout {
     font-size: 24px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a.active {
+    color: #F06;
 }
 
 .header-nav .button-logout:hover {
@@ -183,6 +194,15 @@
     gap: 16px;
 }
 
+.div-page p {
+    display: flex;
+    align-items: center;
+    padding-inline: 13px;
+    height: 35px;
+    border: 1px solid #000;
+    border-radius: 1000px;
+}
+
 .div-page button {
     height: 32px;
     border: none;
@@ -207,7 +227,7 @@
 /* css footer */
 
 .footer-name {
-    margin-top: 40px;
+    margin-top: 35px;
     background-color: #000;
     color: white;
     display: flex;
