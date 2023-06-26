@@ -43,7 +43,7 @@
 // import "./components/pertemuan-7/index.css";
 
 // // Importan pertemuan ke 7.1
-import Home from "./components/pertemuan-7.1/pages/home";
+import Home from "./components/pertemuan-7.1/pages/Home";
 import About from "./components/pertemuan-7.1/pages/About";
 import Header from "./components/pertemuan-7/Header";
 import Contact from "./components/pertemuan-7.1/pages/Contact";
