@@ -53,6 +53,7 @@ a {
 
 a.active {
     color: #F06;
+    border-bottom: 3px solid #F06;
 }
 
 .header-nav .button-logout:hover {

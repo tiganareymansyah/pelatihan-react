@@ -1,6 +1,6 @@
 import { BsApple } from "react-icons/bs";
-import { FiLogOut } from "react-icons/fi";
 import { NavLink, Link } from "react-router-dom";
+import ButtonLogout from "../pertemuan-7.1/pages/ButtonLogout";
 
 export default function Header() {
   return (
@@ -12,7 +12,7 @@ export default function Header() {
       <NavLink to={"/"} className={(props) => props.isActive && "active"}>Beranda</NavLink>
       <NavLink to={"/about"}>About</NavLink>
       <NavLink to={"/contact"}>Contact</NavLink>
-      <button className="button-logout"><FiLogOut className="logo-logout"/> Logout</button>
+      <ButtonLogout />
     </header>
   );
 }

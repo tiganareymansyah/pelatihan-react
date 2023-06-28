@@ -43,11 +43,8 @@
 // import "./components/pertemuan-7/index.css";
 
 // // Importan pertemuan ke 7.1
+import { Outlet } from "react-router-dom";
 import Home from "./components/pertemuan-7.1/pages/Home";
-import About from "./components/pertemuan-7.1/pages/About";
-import Header from "./components/pertemuan-7/Header";
-import Contact from "./components/pertemuan-7.1/pages/Contact";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // // Variable pertemuan 7
 // const products = [
@@ -284,14 +281,8 @@ export default function App() {
   // // Ini pertemuan ke 7.1
   return (
     <>
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </BrowserRouter>
+        <Home />
+        <Outlet />
     </>
   );
 }

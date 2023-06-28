@@ -6,7 +6,7 @@ export default function Product({ name, image, price }) {
       <img src={image} alt={name} />
       <p>Name : {name}</p>
       <p>
-        Price : {price.toLocaleString("id-ID", { style: "currency", currency: "IDR" })}
+        Price : {price.toLocaleString("id-ID", { style: "currency", currency: "IDR", maximumFractionDigits: 0 })}
       </p>
       <button><BsCartPlusFill className="logo-beli" />Buy</button>
     </div>

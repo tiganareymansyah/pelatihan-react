@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../../../public/pawel-czerwinski-fOXvuWswMDs-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+/* css header */
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 3px;
+  color: white;
+  background-color: #000;
+}
+
+.div-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo-apple {
+  font-size: 24px;
+  fill: #f06;
+}
+
+.header-nav .button-admin {
+  height: 32px;
+  border: none;
+  border-radius: 16px;
+  color: #fff;
+  background-color: #f06;
+  padding-inline: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.logo-admin {
+  font-size: 24px;
+}
+
+.header-nav .button-admin:hover {
+  color: black;
+  background-color: #fff;
+  transition: 0.5s ease-in-out;
+}
+
+/* css main */
+
+.main-login {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.div-form-login {
+  background-color: #000;
+  border-radius: 16px;
+  width: 300px;
+}
+
+.div-form-login h2 {
+  color: #f06;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  padding-top: 32px;
+  letter-spacing: 3px;
+}
+
+.div-form-login form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 32px;
+
+  & input[type="text"] {
+    height: 32px;
+    padding-inline: 8px;
+    border: none;
+    border-bottom: 1px solid #f06;
+    background-color: #000;
+    color: #fff;
+  }
+
+  & .div-button-login {
+    padding-top: 26px;
+    display: flex;
+    justify-content: center;
+
+    > button {
+      color: #fff;
+      background-color: #f06;
+      border: none;
+      height: 32px;
+      padding-inline: 32px;
+      border-radius: 32px;
+      cursor: pointer;
+    }
+
+    > :hover {
+      color: #000;
+      background-color: #fff;
+      transition: 0.5s ease-in-out;
+    }
+  }
+}
+
+.div-logintocreateaccount {
+  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+
+  > h5 {
+    color: #f06;
+    font-size: 13px;
+  }
+
+  > .link-register {
+    color: blue;
+    font-size: 13px;
+    text-decoration: underline;
+  }
+
+  > .link-register:hover {
+    color: #fff;
+  }
+
+}
+
+/* css footer */
+
+.footer-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  height: 32px;
+  margin-top: 123px;
+
+  > p {
+    color: #f06;
+  }
+}
